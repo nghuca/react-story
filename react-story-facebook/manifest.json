@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "React Story Facebook",
+  "description": "CẦN VẪN NHỚ",
+  "version": "1.3.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "db/emoji.json",
+    "images/react-icon.png"  // Ensure this path is correct based on your directory structure
+  ],
+  "permissions": [
+    "tabs",
+    "https://www.facebook.com/*"
+  ]
+}

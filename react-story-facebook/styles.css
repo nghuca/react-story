@@ -1,0 +1,99 @@
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* React Container Styling */
+.react-container {
+  position: relative;
+  padding: 5px;
+}
+
+/* React Button Styling */
+.btn-react {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+} 
+
+.btn-react-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-react:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Emoji Group Styling */
+.emoji-group {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  width: 300px;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  display: none;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  height: 350px; /* Specific height for scrolling */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.emoji-group--show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Emoji Styling */
+.emoji {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px; /* Spacing between emojis */
+}
+
+.emoji:hover {
+  background-color: #e0e0e0; /* Light gray background on hover */
+  transform: scale(1.2);
+}
